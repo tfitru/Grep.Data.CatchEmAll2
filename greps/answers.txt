@@ -1,21 +1,55 @@
 # Part 1
 ### a)
-
-
+grep "wart" forest/*.4 > captured/wartortle.txt
+grep "butt" forest/*.1 > captured/butterfree.txt
+grep "squi" forest/*.4 > captured/squirtle.txt
+grep "venu" forest/*.4 > captured/venusaur.txt
+grep "pika" forest/*.3 > captured/pikachu.txt
+grep "meow" forest/*.3 > captured/meowth.txt
+grep "ivys" forest/*.3 > captured/ivysaur.txt
+grep "blas" forest/*.1 > captured/blastoise.txt
+grep "jigg" forest/*.3 > captured/jigglypuff.txt
+grep "beed" forest/*.1 > captured/beedrill.txt
+grep "mander" forest/*.2 > captured/charmander.txt
+grep "meleon" forest/*.2 > captured/charmeleon.txt
+grep "izard" forest/*.2 > captured/charizard.txt
+grep "bulb" forest/*.1 > captured/bulbasur.txt
+grep "psy" forest/*.4 > captured/psyduck.txt
 
 
 ### b)
-
-
+wartortle.txt
+butterfree.txt
+squirtle.txt
+venusaur.txt
+pikachu.txt
+mewoth.txt
+ivysaur.txt
+blastoise.txt
+jigglypuf.txt
+beedrill.txt
+charmander.txt
+charmeleon.txt
+charizard.txt
+bulbasur.txt
+psyduck.txt
 
 ### c)
-
-
-
-
-
-
-
+forest/filescan_00.4:wart
+forest/filescan_00.1:butt
+forest/filescan_00.1:squ
+forest/filescan_00.4:venu
+forest/filescan_00.3:pika
+forest/filescan_00.3:meow
+forest/filescan_00.3:ivys
+forest/filescan_00.1:blast
+forest/filescan_00.3:jigg
+forest/filescan_00.1:beed
+forest/filescan_00.2:mander
+forest/filescan_00.2:meleon
+forest/filescan_00.2:izard
+forest/filescan_00.1:bulb
+forest/filescan_00.4:psyd
 
 
 
@@ -25,13 +59,30 @@
 # Part 2
 ### a)
 
-
+grep -l "" * | wc -l 
 
 
 
 
 ### b)
 
+grep -e "$" -c * | sort -rn -k2 -t:
+
+pikachu.txt:40
+charizard.txt:40
+beedrill.txt:40
+butterfree.txt:38
+blastoise.txt:38
+wartortle.txt:37
+psyduck.txt:37
+charmeleon.txt:37
+charmander.txt:36
+squirtle.txt:34
+jigglypuff.txt:34
+meowth.txt:33
+ivysaur.txt:33
+venusaur.txt:32
+bulbasur.txt:30
 
 
 
